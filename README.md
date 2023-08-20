@@ -14,22 +14,32 @@ Monthly reports of DHF cases from January 2015 to December 2022 were collected f
 Monthly records of rain accumulation (measured in millimeters), relative humidity (expressed as a percentage), and temperature (highest, lowest, and average in Celsius) were sourced from the local meteorological department for the same period. The meteorological data were recorded at standardized measurement stations near Ban Suan Hospital.
 
 ## Data Preparation
-- Train / Test split
-- Adjust Data on Train set: Target Variable (Number of patients)
-- Create lag variables
-- Summarize data for input variable
-- Data Transformation on Target Variable (Number of patients)
+1. Train / Test split
+2. Adjust Data on Train set: Target Variable (Number of patients)
+3. Create lag variables
+4. Summarize data for input variable
+5. Data Transformation on Target Variable (Number of patients)
 
 ## Methodology
-- Ensemble Learning : Boosting
-- XGBoost
-- LightGBM
-- Feature selection: Pearson correlation coefficient
-- Evaluation Metrics
+1. Ensemble Learning : Boosting
+2. XGBoost
+3. LightGBM
+4. Feature selection: Pearson correlation coefficient
+5. Evaluation Metrics
 
 ## Modeling Process
+
+![PROCESS](Model_Process.png)
+
 ## Result and Conclusion
-## Discussion
+1. Result on train set
+   XGBoost with standardize transform and use all factor is the best model for train set.
+2. Result on validate set
+   Same with the train set, XGBoost with standardize transform and all factor is the best model for validate set.
+3. Result on test set
+   XGBost with normalize transform and use the factor from feature selection is the best model for test set if we focus on root mean squared error.
+   But, if we focus on mean absolute error, the more that has lowest mean absolute error is XGBoost with log transform and use all factor.
+   
 
 
 
