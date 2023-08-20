@@ -28,23 +28,23 @@ Monthly records of rain accumulation (measured in millimeters), relative humidit
 5. Evaluation Metrics
 
 ## Modeling Process
-<img src="Model_Process.png" width="800" height="400"><br>
+<img src="https://github.com/NavapolSan/IndependentStudy/blob/main/Image/Model_Process.png" width="800" height="400"><br>
 
 
 ## Result and Conclusion
 
 __1. Result on train set__<br>
 &emsp;XGBoost with standardize transform and use all factor is the best model for train set.
-   <img src="ResultTrain.png" width="700" height="350"><br>
+   <img src="https://github.com/NavapolSan/IndependentStudy/blob/main/Image/ResultTrain.png" width="700" height="350"><br>
 
 __2. Result on validate set__<br>
 &emsp;Same with the train set, XGBoost with standardize transform and all factor is the best model for validate set.
-   <img src="ResultValidate.png" width="700" height="350"><br>
+   <img src="https://github.com/NavapolSan/IndependentStudy/blob/main/Image/ResultValidate.png" width="700" height="350"><br>
 
 __3. Result on test set__<br>
 &emsp;XGBost with normalize transform and use the factor from feature selection is the best model for test set if we focus on root mean squared error.
 But, if we focus on mean absolute error, the more that has lowest mean absolute error is XGBoost with log transform and use all factor.
-   <img src="ResultTest.png" width="700" height="350"><br>
+   <img src="https://github.com/NavapolSan/IndependentStudy/blob/main/Image/ResultTest.png" width="700" height="350"><br>
    
 
 
